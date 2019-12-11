@@ -44,6 +44,8 @@ For more details, click on the configuration parameters.
 +----------------------------------+--------------------------------------------------------+------------------------------------------------------------+
 | ARA_DATABASE_USER_               | ``None``                                               | Django's USER_ database setting                            |
 +----------------------------------+--------------------------------------------------------+------------------------------------------------------------+
+| ARA_DATABASE_OPTIONS_            | ``None``                                               | Django's OPTIONS_ database setting                         |
++----------------------------------+--------------------------------------------------------+------------------------------------------------------------+
 | ARA_DEBUG_                       | ``False``                                              | Django's DEBUG_ setting                                    |
 +----------------------------------+--------------------------------------------------------+------------------------------------------------------------+
 | ARA_DISTRIBUTED_SQLITE_          | ``False``                                              | Whether to enable distributed sqlite backend               |
@@ -276,6 +278,17 @@ The port to use when connecting to the database server.
 
 It is not required to set the port if you're using default ports for MySQL or
 PostgreSQL.
+
+ARA_DATABASE_OPTIONS
+~~~~~~~~~~~~~~~~~~~~
+
+- **Environment variable**: ``ARA_DATABASE_OPTIONS``
+- **Configuration file variable**: ``DATABASE_OPTIONS``
+- **Provided by**: Django's OPTIONS_ database setting
+- **Type**: ``dictionary``
+- **Default**: ``None``
+
+A dictionary of options to be passed to the database engine such as SSL.
 
 ARA_DEBUG
 ~~~~~~~~~
