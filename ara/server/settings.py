@@ -128,7 +128,7 @@ DATABASES = {
         "HOST": DATABASE_HOST,
         "PORT": DATABASE_PORT,
         "CONN_MAX_AGE": DATABASE_CONN_MAX_AGE,
-        "OPTIONS": DATABASE_OPTIONS,
+        "OPTIONS": DATABASE_OPTIONS or dict(),
     }
 }
 
